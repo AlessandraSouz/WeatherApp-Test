@@ -1,0 +1,16 @@
+Decisão da arquitetura:
+- MVVM, porque ela proporciona utilização de interface reativa e facilita a manutenção do código com a divisão das camadas de modelo, telas e camada de negócio.
+
+Lista das bibliotecas de terceiros utilizadas:
+- Newtonsoft.JSON: Para serializar e deserializar objetos JSON.
+- SQLite: Para armazenar os dados localmente.
+- Acr.UserDialogs: Para caixas de diálogo como alertas e loading.
+
+O que poderia melhorar:
+- Utilização de interfaces para manter o contrato entre as classes e métodos.
+- Definição de layout, poderia ter utilizado mais atributos.
+
+Pontos que não foram possíveis de entregar:
+- Não consegui chegar em uma fase funcional, porque ao compilar ocorreram algumas exceptions que não pude resolver pela falta de tempo e conhecimento da plataforma.
+- Na tela principal, não desenvolvi a funcionalidade para armazenar as cidades como favoritas no banco de dados local, porque não a considero prioritária.
+- Não consegui ler o JSON a partir do projeto.

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="Detalhes"
+             x:Class="Weather.Views.WeatherInformation">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="{Binding NomeCidade}" FontSize="20" Margin="20" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+            <Label Text="{Binding Descricao}" FontSize="16" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+            <Label HorizontalOptions="Start" FontSize="16">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Temperatura Atual: "/>
+                            <Span Text="{Binding Temperatura}"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label HorizontalOptions="Start" FontSize="12">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Temperatura Mínima: "/>
+                            <Span Text="{Binding TempMin}"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Label HorizontalOptions="Start" FontSize="12">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="Temperatura Máxima: "/>
+                            <Span Text="{Binding TempMax}"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
